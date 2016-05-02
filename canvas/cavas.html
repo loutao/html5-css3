@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>canvas</title>
+  <script>
+    function drawDiagonal(){
+      var canvas = document.getElementById("diagonal");
+      var context = canvas.getContext('2d');
+      context.beginPath();
+      context.moveTo(70, 140);
+      context.lineTo(140, 70);
+      context.stroke();
+    }
+    window.addEventListener('load', drawDiagonal, true);
+  </script>
+</head>
+<body>
+  <canvas id="diagonal" style="border: 1px solid;" width="200px" height="200px">
+    update browser to use canvas!
+
+  </canvas>
+</body>
+</html>
